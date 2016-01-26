@@ -1,1 +1,0 @@
-{"version":3,"file":"zone.js","sourceRoot":"","sources":["../../../../src/nativescript-angular/zone.ts"],"names":[],"mappings":"AAAA,sDAAsD;AACtD,oDAAoD;AACpD,2BAA8B,cAE9B,CAAC,CAF2C;AAE5C,IAAI,IAAI,GAAG,OAAO,CAAC,qBAAqB,CAAC,CAAC;AAE1C,MAAM,CAAC,IAAI,GAAG,IAAI,CAAC,IAAI,CAAC;AACxB,MAAM,CAAC,IAAI,GAAG,IAAI,IAAI,CAAC,IAAI,EAAE,CAAC;AAE9B,oBAAiB,CAAC,KAAK,EAAE,CAAC"}
