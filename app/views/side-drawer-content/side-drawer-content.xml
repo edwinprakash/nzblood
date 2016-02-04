@@ -1,0 +1,9 @@
+<StackLayout cssClass="drawer-content" loaded="onLoaded">
+	<Label text="Home" cssClass="drawer-item" tap="tapHome" />
+	<Label text="Login" cssClass="drawer-item" tap="tapLogin" />
+	<Label text="Contact us" cssClass="drawer-item" tap="tapContact" />
+	<Label text="About" cssClass="drawer-item" tap="tapAbout" />
+	<Label text="Donation locations" cssClass="drawer-item" tap="tapLocation" />
+	<Label text="About donation" cssClass="drawer-item" tap="tapDrawerLink" tag="http://www.nzblood.co.nz/give-blood/" />
+	<Label text="Version" cssClass="drawer-item" tap="tapVersion" />
+</StackLayout>

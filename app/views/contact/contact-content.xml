@@ -1,0 +1,23 @@
+<GridLayout xmlns="http://www.nativescript.org/tns.xsd" cssClass="content-background-main">
+    <StackLayout cssClass="marginated-content">
+        <ios>
+            <Label text="Contact" cssClass="info-title" />
+        </ios>
+        <TextView cssClass="info-text" editable="false" text="National Office
+
+11 Great South Road,
+Epsom,
+Auckland 1051,
+New Zealand
+
+ Postal Address
+
+Private Bag 92-071,
+Victoria Street West,
+Auckland 1142,
+New Zealand
+
+Telephone: 09 523 5744 
+Email: donors.national@nzblood.co.nz" />
+    </StackLayout>
+</GridLayout>

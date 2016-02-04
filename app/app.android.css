@@ -1,0 +1,106 @@
+@import { url('~/app-common.css') };
+
+.drawer-item {
+    padding: 16;
+    font-size: 14;
+}
+
+.drawer-controls-title{
+    margin: 8 16;
+    font-size: 14;
+}
+
+.example-types-bar {
+    background-color: none;
+    color: white;
+}
+
+ActionBar {
+    margin: 25 0 0 0;
+}
+
+.chart-demo-content {
+    padding-top: 25;
+    background-color: black;
+}
+
+.example-title-list, .example-title-wrap {
+    color: black;
+    margin: 3;
+}
+.example-title-list {
+    horizontal-align: left;
+    font-size: 20;
+}
+.example-title-wrap {
+    horizontal-align: center;
+    font-size: 17;
+}
+
+.used-controls-list, .used-controls-wrap {
+    color: #95959E;
+    vertical-align: top;
+    font-weight: bold;
+}
+.used-controls-list {
+    font-size: 12;
+    margin: 3;
+}
+.used-controls-wrap {
+    font-size: 12;
+    margin: 0 16;
+}
+
+.info-link-button {
+    font-size: 14;
+    font-weight: bold;
+}
+
+.show-new-btn,
+.group-show-new-btn {
+    font-weight: bold;
+    font-size: 14;
+}
+
+.marginated-content {
+    margin: 0 16 0 16;
+}
+
+.example-menu-item-back {
+    color: white;
+    font-size: 17;
+    font-weight: bold;
+    background-image: url("res://ic_arrow_back");
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+}
+
+.example-menu-item,
+.example-menu-item-prev,
+.example-menu-item-next {
+    color: white;
+    font-size: 17;
+    background-color: transparent;
+}
+
+.example-menu-item-back,
+.example-menu-item {
+    horizontal-align: left;
+    margin: 0 0 0 20;
+    padding: 10 10 10 30;
+}
+
+.example-menu-item-prev {
+    background-image: url("res://ic_prev");
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    padding: 10 0 10 20;
+    margin: 5 15;
+}
+.example-menu-item-next {
+    background-image: url("res://ic_next");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    padding: 10 20 10 0;
+    margin: 5 15;
+}

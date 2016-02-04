@@ -1,0 +1,95 @@
+@import { url('~/app-common.css') };
+
+.drawer-item {
+    padding: 12;
+    font-size: 17;
+}
+
+.drawer-controls-title{
+    margin: 8 10 0 10;
+    font-size: 14;
+}
+
+.example-types-bar {
+    color: white;
+    margin: 8 12 8 12;
+}
+
+.example-title-list, .example-title-wrap {
+    color: black;
+    margin: 3;
+}
+.example-title-list {
+    font-size: 19;
+    horizontal-align: left;
+}
+.example-title-wrap {
+    font-size: 17;
+    horizontal-align: center;
+}
+
+.used-controls-list, .used-controls-wrap{
+    vertical-align: top;
+    font-weight: bold;
+    color: #95959E;
+}
+.used-controls-list {
+    margin: 3;
+    font-size: 17;
+}
+.used-controls-wrap {
+    margin: 12;
+    font-size: 15;
+}
+
+.info-link-button {
+    font-size: 16;
+}
+
+.info-text {
+    margin-left: 5;
+}
+.info-title, .info-link-button {
+    margin-left: 10;
+}
+
+.marginated-content{
+    margin: 0 16;
+}
+
+.example-menu-item-back {
+    font-weight: bold;
+    background-image: url("res://ic_back_btn");
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+}
+
+.example-menu-item-back,
+.example-menu-item,
+.example-menu-item-prev,
+.example-menu-item-next {
+    color: white;
+    font-size: 17;
+}
+
+.example-menu-item-back,
+.example-menu-item {
+    horizontal-align: left;
+    margin: 0 0 0 20;
+    padding: 10 10 10 30;
+}
+
+.example-menu-item-prev {
+    background-image: url("res://ic_prev");
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    padding: 10 0 10 20;
+    margin: 5 15;
+}
+.example-menu-item-next {
+    background-image: url("res://ic_next");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    padding: 10 20 10 0;
+    margin: 5 15;
+}

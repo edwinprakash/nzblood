@@ -1,0 +1,8 @@
+<GridLayout xmlns="http://www.nativescript.org/tns.xsd" cssClass="content-background-main">
+    <StackLayout cssClass="marginated-content">
+        <ios>
+            <Label text="About" cssClass="info-title" />
+        </ios>
+        <TextView cssClass="info-text" editable="false" text="New Zealand Blood Service (NZBS) was created on 1 July 1998 to provide the people of New Zealand with safe, appropriate and timely access to blood and tissue products and related services to meet their health needs.  NZBS takes the responsibility for the development of an integrated national blood transfusion process from the collection of blood from volunteer donors to the transfusion of blood products within the hospital environment - a vein to vein transfusion service." />
+    </StackLayout>
+</GridLayout>

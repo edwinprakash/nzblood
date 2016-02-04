@@ -1,0 +1,31 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd"
+    xmlns:drawer="nativescript-telerik-ui/sidedrawer"
+    xmlns:sdc="views/side-drawer-content"
+    cssClass="qsf-page"
+    navigatingTo="onNavigatingTo"
+    loaded="pageLoaded"
+    backgroundSpanUnderStatusBar="true">
+  <Page.actionBar>
+    <ActionBar>
+      <android>
+        <NavigationButton icon="res://ic_menu" tap="showSlideout" />
+      </android>
+      <ActionBar.actionItems>
+        <iOS>
+          <ActionItem icon="res://ic_menu" ios.position="left" tap="showSlideout" />
+        </iOS>
+      </ActionBar.actionItems>
+      <ActionBar.titleView>
+        <Label text="NZ Blood" />
+      </ActionBar.titleView>
+    </ActionBar>
+  </Page.actionBar>
+  <drawer:RadSideDrawer id="side-drawer">
+    <drawer:RadSideDrawer.drawerContent>
+      <sdc:side-drawer-content />
+    </drawer:RadSideDrawer.drawerContent>
+    <drawer:RadSideDrawer.mainContent>
+        <Label text="Loading..." />
+    </drawer:RadSideDrawer.mainContent>
+  </drawer:RadSideDrawer>
+</Page>

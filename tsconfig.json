@@ -8,6 +8,11 @@
         "experimentalDecorators": true,
         "noEmitHelpers": true
     },
+    "filesGlob": [
+        "./**/*.ts",
+        "./node_modules/tns-core-modules/**/*.ts",
+        "./node_modules/nativescript-telerik-ui/**/*.ts"
+    ],
     "exclude": [
         "node_modules",
         "platforms"
