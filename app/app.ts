@@ -23,6 +23,8 @@ if (application.ios) {
             UIApplication.sharedApplication().keyWindow.backgroundColor = UIColor.blackColor();
         }, 1);
     });
+    
+    GMSServices.provideAPIKey("AIzaSyAwJrSoBXJSJDR4uxJ4PrSok1tNCzIiFqQ");
 }
 
 

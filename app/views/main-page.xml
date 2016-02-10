@@ -25,7 +25,7 @@
       <sdc:side-drawer-content />
     </drawer:RadSideDrawer.drawerContent>
     <drawer:RadSideDrawer.mainContent>
-        <Label text="Loading..." />
+        <Label text="Welcome..." />
     </drawer:RadSideDrawer.mainContent>
   </drawer:RadSideDrawer>
 </Page>

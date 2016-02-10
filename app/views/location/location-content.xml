@@ -1,8 +1,6 @@
-<GridLayout xmlns="http://www.nativescript.org/tns.xsd" cssClass="content-background-main">
-    <StackLayout cssClass="marginated-content">
-        <ios>
-            <Label text="Locations" cssClass="info-title" />
-        </ios>
-        <TextView cssClass="info-text" editable="false" text="Locations..." />
-    </StackLayout>
+<GridLayout xmlns="http://www.nativescript.org/tns.xsd" xmlns:maps="nativescript-google-maps-sdk" cssClass="content-background-main marginated-content">
+    <maps:mapView latitude="-41.287343" longitude="174.7743449"
+        zoom="17" bearing="0" mapReady="onMapReady" 
+        markerSelect="onMarkerSelect" cameraChanged="onCameraChanged" 
+        tilt="0" />
 </GridLayout>

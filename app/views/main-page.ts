@@ -35,22 +35,3 @@ export function onNavigatingTo(args: observable.EventData) {
 export function showSlideout(args) {
     page.getViewById("side-drawer").toggleDrawerState();
 }
-
-
-/*
-import viewModel = require('../view-models/main-page-model');
-import {Page} from 'ui/page';
-
-export function pageLoaded(args) {
-    var page = <Page>args.object;
-    
-    var drawerTransitionsModel = new viewModel.DrawerTransitionsModel();
-    drawerTransitionsModel.setPushTransition();
-    
-    page.bindingContext = drawerTransitionsModel;
-
-    if (frame.topmost().ios){
-        frame.topmost().ios.controller.interactivePopGestureRecognizer.enabled = false;
-    }
-}
-*/
