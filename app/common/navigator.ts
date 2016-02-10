@@ -34,6 +34,13 @@ export function navigateToAbout() {
     }
 }
 
+export function navigateToNotifications() {
+    var topmost = frame.topmost();
+    if (topmost.currentEntry.moduleName !== "views/notifications/notifications") {
+        frame.topmost().navigate("views/notifications/notifications");
+    }
+}
+
 export function navigateToLocation() {
     var topmost = frame.topmost();
     if (topmost.currentEntry.moduleName !== "views/location/location") {

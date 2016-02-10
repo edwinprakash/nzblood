@@ -47,6 +47,11 @@ export function tapAbout(args) {
     navigator.navigateToAbout();
 }
 
+export function tapNotifications(args) {
+    closeDrawer();
+    navigator.navigateToNotifications();
+}
+
 export function tapLocation(args) {
     closeDrawer();
     navigator.navigateToLocation();

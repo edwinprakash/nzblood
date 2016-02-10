@@ -5,5 +5,6 @@
 	<Label text="About" cssClass="drawer-item" tap="tapAbout" />
 	<Label text="Donation locations" cssClass="drawer-item" tap="tapLocation" />
 	<Label text="About donation" cssClass="drawer-item" tap="tapDrawerLink" tag="http://www.nzblood.co.nz/give-blood/" />
+	<Label text="Notifications" cssClass="drawer-item" tap="tapNotifications" />
 	<Label text="Version" cssClass="drawer-item" tap="tapVersion" />
 </StackLayout>
