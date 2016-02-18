@@ -55,6 +55,13 @@ export function navigateToVersion() {
     }
 }
 
+export function navigateToRegister() {
+    var topmost = frame.topmost();
+    if (topmost.currentEntry.moduleName !== "views/register/register") {
+        frame.topmost().navigate("views/register/register");
+    }
+}
+
 export function navigateBack() {
     frame.goBack();
 }

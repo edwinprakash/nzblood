@@ -3,6 +3,8 @@
         <ios>
             <Label text="Notifications" cssClass="info-title" />
         </ios>
-        <TextView cssClass="info-text" editable="false" text="Notify" />
+        <Button text="Subscribe" tap="subscribe" />
+        <Button text="Check if subscribed?" tap="check" />
+        <Button text="Unsubscribe" tap="unsubscribe" />
     </StackLayout>
 </GridLayout>

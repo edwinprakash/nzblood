@@ -1,12 +1,11 @@
 <GridLayout xmlns="http://www.nativescript.org/tns.xsd" cssClass="content-background-main">
     <StackLayout cssClass="marginated-content">
         <ios>
-            <Label text="Sign in" cssClass="info-title" />
+            <Label text="Sign up" cssClass="info-title" />
         </ios>
         <TextField id="email" text="{{ email }}" hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none" style="background-color: white;" />
         <TextField secure="true" text="{{ password }}" hint="Password" style="background-color: white;" />
-
-        <Button text="Sign in" tap="signIn" />
+        
         <Button text="Sign up" class="link" tap="register" />
     </StackLayout>
 </GridLayout>

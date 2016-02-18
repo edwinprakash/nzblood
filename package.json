@@ -43,7 +43,8 @@
     "rxjs": "5.0.0-beta.0",
     "tns-core-modules": "1.5.1",
     "url": "0.10.3",
-    "zone.js": "0.5.10"
+    "zone.js": "0.5.10",
+    "email-validator": "^1.0.3"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

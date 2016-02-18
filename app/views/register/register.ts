@@ -17,20 +17,21 @@ export function onPageLoaded(args: EventData) {
     page.bindingContext = user;
 }
 
-
-export function signIn() {
+export function register() {
+        
+    debugger;
     if (user.isValidEmail()) {
-        user.login()
+        user.register()
             .catch(function(error) {
                 console.log(error);
                 dialogsModule.alert({
-                    message: "Unfortunately we could not find your account.",
+                    message: "Unfortunately we could not register your account.",
                     okButtonText: "OK"
                 });
             })
-            .then(function() {
-                //frameModule.topmost().navigate("views/list/list");
-                console.log("logged in");
+            .then(function() {                
+                navigator.navigateToLogin();
+                console.log("registered");
             });
     } else {
         dialogsModule.alert({
@@ -38,10 +39,6 @@ export function signIn() {
             okButtonText: "OK"
         });
     }
-};
-
-export function register() {
-    navigator.navigateToRegister();
 };
 
 export function navigateBack() {
