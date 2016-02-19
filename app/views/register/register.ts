@@ -19,9 +19,9 @@ export function onPageLoaded(args: EventData) {
 
 export function register() {
         
-    debugger;
     if (user.isValidEmail()) {
-        user.register()
+        debugger;
+        user.register();/*
             .catch(function(error) {
                 console.log(error);
                 dialogsModule.alert({
@@ -32,7 +32,7 @@ export function register() {
             .then(function() {                
                 navigator.navigateToLogin();
                 console.log("registered");
-            });
+            });*/
     } else {
         dialogsModule.alert({
             message: "Enter a valid email address.",

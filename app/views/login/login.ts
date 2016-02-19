@@ -6,21 +6,36 @@ import dialogsModule = require("ui/dialogs");
 import frameModule = require("ui/frame");
 import {UserViewModel}  from "../../view-models/user-view-model";
 
+import Sqlite = require("nativescript-sqlite");
+
 var user = new UserViewModel();
-
-
-
 var page;
 
 export function onPageLoaded(args: EventData) {
+    
     page = <Page>args.object;
     page.bindingContext = user;
+    
+    if (!Sqlite.exists(user.dbname)) {
+        Sqlite.copyDatabase(user.dbname);
+    }
+    new Sqlite(user.dbname, function(err, dbConnection) {
+	if (err) {
+	    console.log(err);
+	}
+        user.db = dbConnection;
+        user.db.resultType(Sqlite.RESULTSASOBJECT);
+    });
 }
 
 
 export function signIn() {
+    var vm = this;
+    
     if (user.isValidEmail()) {
-        user.login()
+        var response = user.login();
+        debugger;
+        /*
             .catch(function(error) {
                 console.log(error);
                 dialogsModule.alert({
@@ -28,10 +43,10 @@ export function signIn() {
                     okButtonText: "OK"
                 });
             })
-            .then(function() {
+            .then(function(r) {
                 //frameModule.topmost().navigate("views/list/list");
                 console.log("logged in");
-            });
+            });*/
     } else {
         dialogsModule.alert({
             message: "Enter a valid email address.",
