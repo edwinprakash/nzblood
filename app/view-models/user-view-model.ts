@@ -13,12 +13,13 @@ export class UserViewModel extends Observable {
 
     public login() {
         var data;
-        this.db.get("select email, pin from users where email=?", [this.email], function(err, row){
+        this.db.get("select email, pin from users where email=? and pin=?", [this.email, this.password], function(err, row){
+            debugger;
             if (err) {
                 console.error("Error:", err.message)
-                data = err;
+                data = false;
             }
-            data = row;
+            data = true;
         });
         return data;
     }
